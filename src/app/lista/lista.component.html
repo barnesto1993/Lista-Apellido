@@ -1,0 +1,7 @@
+
+<div class="wrap" [ngStyle]="{ 'background-color': valor === 'Aguilar' ? 'red' : valor === 'Barrios' ? 'blue' : valor === 'Cruz' ? 'green' : valor === 'Zarate' ? 'yellow' : 'white' }"><p>Lista de estudiantes</p> 
+<form><select [(ngModel)]="valor">  
+    <option *ngFor="let list of list">{{ list }}</option>
+
+</select></form></div>
+
